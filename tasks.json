@@ -1,5 +1,5 @@
 {
-  "serialId": 20,
+  "serialId": 22,
   "todos": {
     "1": {
       "task": "blah",
@@ -9,27 +9,11 @@
       "task": "blah",
       "complete": "false"
     },
-    "4": {
-      "task": "blah",
-      "complete": "false"
-    },
     "5": {
       "task": "spinner",
       "complete": false
     },
-    "6": {
-      "task": "spinner",
-      "complete": false
-    },
     "7": {
-      "task": "spinner",
-      "complete": false
-    },
-    "8": {
-      "task": "spinner",
-      "complete": false
-    },
-    "9": {
       "task": "spinner",
       "complete": false
     },
@@ -61,17 +45,6 @@
       "task": "spinner",
       "complete": false
     },
-    "17": {
-      "task": "spinner",
-      "complete": false
-    },
-    "18": {
-      "task": "spinner",
-      "complete": false
-    },
-    "19": {
-      "task": "spinner",
-      "complete": false
-    }
+    "complete": true
   }
 }

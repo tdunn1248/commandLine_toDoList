@@ -10,12 +10,15 @@ const done = (id) => {
 
   function deleteTask() {
     if(parsed.todos[id]) {
+    console.log('Completed the task ' + parsed.todos.task)
+    parsed.todos.complete = true
     delete parsed.todos[id]
     return parsed
     }
   }
+  deleteTask()
 
-  const updatedFile = JSON.stringify(deleteTask(), null, 2)
+  const updatedFile = JSON.stringify(parsed , null, 2)
 
   fs.writeFile('tasks.json', updatedFile, (err) => {
     if(err) throw err
