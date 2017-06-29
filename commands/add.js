@@ -13,6 +13,7 @@ const addTask = (toDo) => {
   }
 
   parsed.todos[parsed.serialId] = item
+  console.log('Created task ' + parsed.serialId + '.')
   parsed.serialId++
 
   const secondParse = parsed
