@@ -1,11 +1,7 @@
 {
-  "serialId": 19,
+  "serialId": 20,
   "todos": {
     "1": {
-      "task": "blah",
-      "complete": "false"
-    },
-    "2": {
       "task": "blah",
       "complete": "false"
     },
@@ -18,28 +14,28 @@
       "complete": "false"
     },
     "5": {
-      "id": 5,
-      "task": "spinner"
+      "task": "spinner",
+      "complete": false
     },
     "6": {
-      "id": 6,
-      "task": "spinner"
+      "task": "spinner",
+      "complete": false
     },
     "7": {
-      "id": 7,
-      "task": "spinner"
+      "task": "spinner",
+      "complete": false
     },
     "8": {
-      "id": 8,
-      "task": "spinner"
+      "task": "spinner",
+      "complete": false
     },
     "9": {
-      "id": 9,
-      "task": "spinner"
+      "task": "spinner",
+      "complete": false
     },
     "10": {
-      "id": 10,
-      "task": "spinner"
+      "task": "spinner",
+      "complete": false
     },
     "11": {
       "task": "spinner",
@@ -70,6 +66,10 @@
       "complete": false
     },
     "18": {
+      "task": "spinner",
+      "complete": false
+    },
+    "19": {
       "task": "spinner",
       "complete": false
     }

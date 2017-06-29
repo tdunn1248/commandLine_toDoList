@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const addTask = (toDo) => {
-  const file = fs.readFileSync('jsonmock.json', 'UTF-8', (err, data) => {
+  const file = fs.readFileSync('tasks.json', 'UTF-8', (err, data) => {
     if (err) throw error
     return data
   })
@@ -19,7 +19,7 @@ const addTask = (toDo) => {
   const secondParse = parsed
   const updatedFile = JSON.stringify(secondParse, null, 2)
 
-  fs.writeFile('jsonmock.json', updatedFile, (err) => {
+  fs.writeFile('tasks.json', updatedFile, (err) => {
     if (err) throw err
   })
 }

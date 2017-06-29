@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-const list = (file) => {
-  fs.readFile('toDoList.json', 'UTF-8', (err, data) => {
+const list = () => {
+  fs.readFile('tasks.json', 'UTF-8', (err, data) => {
     if (err) throw err
     console.log(data)
   })

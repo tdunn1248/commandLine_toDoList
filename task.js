@@ -12,7 +12,7 @@ const userInput = function(firstArgument, secondArgument) {
       list()
       break
     case 'done':
-      // done(secondArgument)
+      done(secondArgument)
       // break
   }
 }
