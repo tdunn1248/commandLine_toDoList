@@ -12,10 +12,9 @@ const userInput = function(firstArgument, secondArgument) {
       list()
       break
     case 'done':
-      // done(secondArgument)
+      done(secondArgument)
       // break
   }
 }
 
 userInput(process.argv[2], process.argv[3])
-list()
