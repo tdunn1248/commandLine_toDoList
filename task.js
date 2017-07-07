@@ -1,7 +1,7 @@
 const fs = require('fs')
-const addTask = require('./commands/add.js')
-const list = require('./commands/list.js')
-const done = require('./commands/done.js')
+const addTask = require('./commands/add')
+const listie = require('./commands/list')
+const done = require('./commands/done')
 
 const userInput = function(firstArgument, secondArgument) {
   switch(firstArgument) {
@@ -9,11 +9,11 @@ const userInput = function(firstArgument, secondArgument) {
       addTask(secondArgument)
       break
     case 'list':
-      list()
+      listie()
       break
     case 'done':
       done(secondArgument)
-      // break
+      break
   }
 }
 
