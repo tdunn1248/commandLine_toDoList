@@ -2,10 +2,8 @@ const fs = require('fs')
 const starter = {serialId: 0, todos: {}}
 
 const addTask = (toDo) => {
-
   const file = fs.readFileSync('tasks.json', 'UTF-8', (err, data) => {
     if (err) throw error
-    console.log('--->', data);
     if (!data) {
       fs.writeFile('tasks.json', JSON.stringify(starter), (err) => {
         if (err) throw err
