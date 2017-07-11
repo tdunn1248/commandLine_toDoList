@@ -1,29 +1,4 @@
 {
-  "serialId": 8,
-  "todos": {
-    "1": {
-      "task": "drink duff beer",
-      "complete": false
-    },
-    "2": {
-      "task": "drink duff beer",
-      "complete": false
-    },
-    "3": {
-      "task": "drink duff beer",
-      "complete": false
-    },
-    "4": {
-      "task": "drink duff beer",
-      "complete": false
-    },
-    "5": {
-      "task": "drink duff beer",
-      "complete": false
-    },
-    "6": {
-      "task": "drink duff beer",
-      "complete": false
-    }
-  }
+  "serialId": 1,
+  "todos": {}
 }
