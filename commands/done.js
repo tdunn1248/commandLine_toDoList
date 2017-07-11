@@ -9,13 +9,16 @@ const done = (id) => {
   const parsed = JSON.parse(file)
 
   function deleteTask() {
+    if(isNaN(id)) {
+      console.log('Please enter a valid ID')
+    }
     if(parsed.todos[id]) {
     console.log('Completed the task ' + "'" + parsed.todos[id].task + "'")
     delete parsed.todos[id]
     return parsed
     }
   }
- 
+
   const updatedFile = JSON.stringify(deleteTask(), null, 2)
 
   fs.writeFile('tasks.json', updatedFile, (err) => {
