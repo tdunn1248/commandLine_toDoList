@@ -1,6 +1,6 @@
 const chai = require('chai')
 const expect = chai.expect
-
+const data = require('../tasks.json')
 const  add = require('../commands/add')
 const  done = require('../commands/done')
 const  list = require('../commands/list')
