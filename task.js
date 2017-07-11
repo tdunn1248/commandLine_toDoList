@@ -1,6 +1,6 @@
 const fs = require('fs')
 const addTask = require('./commands/add')
-const listie = require('./commands/list')
+const list = require('./commands/list')
 const done = require('./commands/done')
 
 const userInput = function(firstArgument, secondArgument) {
@@ -9,11 +9,13 @@ const userInput = function(firstArgument, secondArgument) {
       addTask(secondArgument)
       break
     case 'list':
-      listie()
+      list()
       break
     case 'done':
       done(secondArgument)
       break
+    default:
+      console.log('Please enter valid command')
   }
 }
 
