@@ -15,7 +15,7 @@ describe('add()', function() {
     })
     done()
   })
-  it('add is a function', (done) =>  {
+  it('add is a function that appends item to JSON object', (done) =>  {
     add('Walk the Cat')
     const testTask = {
       serialId: 1,
