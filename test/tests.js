@@ -8,6 +8,11 @@ const  done = require('../commands/done')
 const  list = require('../commands/list')
 
 describe('add()', function() {
+  // You probably want `beforeEach` here instead of `before` to make sure that
+  // the file is reset before every `it` test runs as oppose to just once at
+  // the befinning. In the case it doesn'r matter since you just have one `it`
+  // in this `describe` but if you add a second `it` later this `before` would
+  // probably bite you.
   before(function(done) {
     this.starter = {serialId: 0, todos: {}}
     fs.writeFile('tasks.json', JSON.stringify(this.starter), (err) => {
@@ -54,6 +59,8 @@ describe('done()', function() {
 
 describe('list()', function() {
   before(function(done) {
+    // becuase you're using readFile here and not readFileSync this.list will be undefined
+    // Your test is passing becuse your `list()` function also returns undefined after printing the list to the console. These command funtions would be more testable if they accepted callback and passed the output to be printed to the callback. Then you could just print out that data in task.js and compare it to your expectations in the tests without having to print anything.
     this.list = fs.readFile('tasks.json', 'UTF-8', (err, data) => {
     })
     done()
